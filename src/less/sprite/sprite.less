@@ -1,0 +1,285 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-basket-orange-name: 'icon-basket-orange';
+@icon-basket-orange-x: 113px;
+@icon-basket-orange-y: 43px;
+@icon-basket-orange-offset-x: -113px;
+@icon-basket-orange-offset-y: -43px;
+@icon-basket-orange-width: 24px;
+@icon-basket-orange-height: 23px;
+@icon-basket-orange-total-width: 168px;
+@icon-basket-orange-total-height: 165px;
+@icon-basket-orange-image: '../assets/icons/sprite.png';
+@icon-basket-orange: 113px 43px -113px -43px 24px 23px 168px 165px '../assets/icons/sprite.png' 'icon-basket-orange';
+@icon-fb-big-name: 'icon-fb-big';
+@icon-fb-big-x: 51px;
+@icon-fb-big-y: 49px;
+@icon-fb-big-offset-x: -51px;
+@icon-fb-big-offset-y: -49px;
+@icon-fb-big-width: 36px;
+@icon-fb-big-height: 36px;
+@icon-fb-big-total-width: 168px;
+@icon-fb-big-total-height: 165px;
+@icon-fb-big-image: '../assets/icons/sprite.png';
+@icon-fb-big: 51px 49px -51px -49px 36px 36px 168px 165px '../assets/icons/sprite.png' 'icon-fb-big';
+@icon-fb-black-name: 'icon-fb-black';
+@icon-fb-black-x: 152px;
+@icon-fb-black-y: 31px;
+@icon-fb-black-offset-x: -152px;
+@icon-fb-black-offset-y: -31px;
+@icon-fb-black-width: 13px;
+@icon-fb-black-height: 18px;
+@icon-fb-black-total-width: 168px;
+@icon-fb-black-total-height: 165px;
+@icon-fb-black-image: '../assets/icons/sprite.png';
+@icon-fb-black: 152px 31px -152px -31px 13px 18px 168px 165px '../assets/icons/sprite.png' 'icon-fb-black';
+@icon-fb-white-name: 'icon-fb-white';
+@icon-fb-white-x: 0px;
+@icon-fb-white-y: 150px;
+@icon-fb-white-offset-x: 0px;
+@icon-fb-white-offset-y: -150px;
+@icon-fb-white-width: 10px;
+@icon-fb-white-height: 15px;
+@icon-fb-white-total-width: 168px;
+@icon-fb-white-total-height: 165px;
+@icon-fb-white-image: '../assets/icons/sprite.png';
+@icon-fb-white: 0px 150px 0px -150px 10px 15px 168px 165px '../assets/icons/sprite.png' 'icon-fb-white';
+@icon-file-name: 'icon-file';
+@icon-file-x: 113px;
+@icon-file-y: 0px;
+@icon-file-offset-x: -113px;
+@icon-file-offset-y: 0px;
+@icon-file-width: 29px;
+@icon-file-height: 33px;
+@icon-file-total-width: 168px;
+@icon-file-total-height: 165px;
+@icon-file-image: '../assets/icons/sprite.png';
+@icon-file: 113px 0px -113px 0px 29px 33px 168px 165px '../assets/icons/sprite.png' 'icon-file';
+@icon-google-black-name: 'icon-google-black';
+@icon-google-black-x: 0px;
+@icon-google-black-y: 97px;
+@icon-google-black-offset-x: 0px;
+@icon-google-black-offset-y: -97px;
+@icon-google-black-width: 27px;
+@icon-google-black-height: 18px;
+@icon-google-black-total-width: 168px;
+@icon-google-black-total-height: 165px;
+@icon-google-black-image: '../assets/icons/sprite.png';
+@icon-google-black: 0px 97px 0px -97px 27px 18px 168px 165px '../assets/icons/sprite.png' 'icon-google-black';
+@icon-in-black-name: 'icon-in-black';
+@icon-in-black-x: 66px;
+@icon-in-black-y: 97px;
+@icon-in-black-offset-x: -66px;
+@icon-in-black-offset-y: -97px;
+@icon-in-black-width: 18px;
+@icon-in-black-height: 18px;
+@icon-in-black-total-width: 168px;
+@icon-in-black-total-height: 165px;
+@icon-in-black-image: '../assets/icons/sprite.png';
+@icon-in-black: 66px 97px -66px -97px 18px 18px 168px 165px '../assets/icons/sprite.png' 'icon-in-black';
+@icon-in-white-name: 'icon-in-white';
+@icon-in-white-x: 152px;
+@icon-in-white-y: 59px;
+@icon-in-white-offset-x: -152px;
+@icon-in-white-offset-y: -59px;
+@icon-in-white-width: 15px;
+@icon-in-white-height: 15px;
+@icon-in-white-total-width: 168px;
+@icon-in-white-total-height: 165px;
+@icon-in-white-image: '../assets/icons/sprite.png';
+@icon-in-white: 152px 59px -152px -59px 15px 15px 168px 165px '../assets/icons/sprite.png' 'icon-in-white';
+@icon-inst-white-name: 'icon-inst-white';
+@icon-inst-white-x: 152px;
+@icon-inst-white-y: 84px;
+@icon-inst-white-offset-x: -152px;
+@icon-inst-white-offset-y: -84px;
+@icon-inst-white-width: 15px;
+@icon-inst-white-height: 15px;
+@icon-inst-white-total-width: 168px;
+@icon-inst-white-total-height: 165px;
+@icon-inst-white-image: '../assets/icons/sprite.png';
+@icon-inst-white: 152px 84px -152px -84px 15px 15px 168px 165px '../assets/icons/sprite.png' 'icon-inst-white';
+@icon-logo-name: 'icon-logo';
+@icon-logo-x: 0px;
+@icon-logo-y: 49px;
+@icon-logo-offset-x: 0px;
+@icon-logo-offset-y: -49px;
+@icon-logo-width: 41px;
+@icon-logo-height: 38px;
+@icon-logo-total-width: 168px;
+@icon-logo-total-height: 165px;
+@icon-logo-image: '../assets/icons/sprite.png';
+@icon-logo: 0px 49px 0px -49px 41px 38px 168px 165px '../assets/icons/sprite.png' 'icon-logo';
+@icon-mark-map-name: 'icon-mark-map';
+@icon-mark-map-x: 152px;
+@icon-mark-map-y: 0px;
+@icon-mark-map-offset-x: -152px;
+@icon-mark-map-offset-y: 0px;
+@icon-mark-map-width: 16px;
+@icon-mark-map-height: 21px;
+@icon-mark-map-total-width: 168px;
+@icon-mark-map-total-height: 165px;
+@icon-mark-map-image: '../assets/icons/sprite.png';
+@icon-mark-map: 152px 0px -152px 0px 16px 21px 168px 165px '../assets/icons/sprite.png' 'icon-mark-map';
+@icon-peoples-name: 'icon-peoples';
+@icon-peoples-x: 62px;
+@icon-peoples-y: 0px;
+@icon-peoples-offset-x: -62px;
+@icon-peoples-offset-y: 0px;
+@icon-peoples-width: 41px;
+@icon-peoples-height: 39px;
+@icon-peoples-total-width: 168px;
+@icon-peoples-total-height: 165px;
+@icon-peoples-image: '../assets/icons/sprite.png';
+@icon-peoples: 62px 0px -62px 0px 41px 39px 168px 165px '../assets/icons/sprite.png' 'icon-peoples';
+@icon-phone-name: 'icon-phone';
+@icon-phone-x: 25px;
+@icon-phone-y: 125px;
+@icon-phone-offset-x: -25px;
+@icon-phone-offset-y: -125px;
+@icon-phone-width: 14px;
+@icon-phone-height: 14px;
+@icon-phone-total-width: 168px;
+@icon-phone-total-height: 165px;
+@icon-phone-image: '../assets/icons/sprite.png';
+@icon-phone: 25px 125px -25px -125px 14px 14px 168px 165px '../assets/icons/sprite.png' 'icon-phone';
+@icon-pintrest-black-name: 'icon-pintrest-black';
+@icon-pintrest-black-x: 37px;
+@icon-pintrest-black-y: 97px;
+@icon-pintrest-black-offset-x: -37px;
+@icon-pintrest-black-offset-y: -97px;
+@icon-pintrest-black-width: 19px;
+@icon-pintrest-black-height: 18px;
+@icon-pintrest-black-total-width: 168px;
+@icon-pintrest-black-total-height: 165px;
+@icon-pintrest-black-image: '../assets/icons/sprite.png';
+@icon-pintrest-black: 37px 97px -37px -97px 19px 18px 168px 165px '../assets/icons/sprite.png' 'icon-pintrest-black';
+@icon-student-name: 'icon-student';
+@icon-student-x: 0px;
+@icon-student-y: 0px;
+@icon-student-offset-x: 0px;
+@icon-student-offset-y: 0px;
+@icon-student-width: 52px;
+@icon-student-height: 39px;
+@icon-student-total-width: 168px;
+@icon-student-total-height: 165px;
+@icon-student-image: '../assets/icons/sprite.png';
+@icon-student: 0px 0px 0px 0px 52px 39px 168px 165px '../assets/icons/sprite.png' 'icon-student';
+@icon-tw-black-name: 'icon-tw-black';
+@icon-tw-black-x: 94px;
+@icon-tw-black-y: 97px;
+@icon-tw-black-offset-x: -94px;
+@icon-tw-black-offset-y: -97px;
+@icon-tw-black-width: 18px;
+@icon-tw-black-height: 18px;
+@icon-tw-black-total-width: 168px;
+@icon-tw-black-total-height: 165px;
+@icon-tw-black-image: '../assets/icons/sprite.png';
+@icon-tw-black: 94px 97px -94px -97px 18px 18px 168px 165px '../assets/icons/sprite.png' 'icon-tw-black';
+@icon-tw-white-name: 'icon-tw-white';
+@icon-tw-white-x: 122px;
+@icon-tw-white-y: 97px;
+@icon-tw-white-offset-x: -122px;
+@icon-tw-white-offset-y: -97px;
+@icon-tw-white-width: 15px;
+@icon-tw-white-height: 15px;
+@icon-tw-white-total-width: 168px;
+@icon-tw-white-total-height: 165px;
+@icon-tw-white-image: '../assets/icons/sprite.png';
+@icon-tw-white: 122px 97px -122px -97px 15px 15px 168px 165px '../assets/icons/sprite.png' 'icon-tw-white';
+@icon-vimeo-white-name: 'icon-vimeo-white';
+@icon-vimeo-white-x: 0px;
+@icon-vimeo-white-y: 125px;
+@icon-vimeo-white-offset-x: 0px;
+@icon-vimeo-white-offset-y: -125px;
+@icon-vimeo-white-width: 15px;
+@icon-vimeo-white-height: 15px;
+@icon-vimeo-white-total-width: 168px;
+@icon-vimeo-white-total-height: 165px;
+@icon-vimeo-white-image: '../assets/icons/sprite.png';
+@icon-vimeo-white: 0px 125px 0px -125px 15px 15px 168px 165px '../assets/icons/sprite.png' 'icon-vimeo-white';
+@spritesheet-width: 168px;
+@spritesheet-height: 165px;
+@spritesheet-image: '../assets/icons/sprite.png';
+@spritesheet-sprites: @icon-basket-orange @icon-fb-big @icon-fb-black @icon-fb-white @icon-file @icon-google-black @icon-in-black @icon-in-white @icon-inst-white @icon-logo @icon-mark-map @icon-peoples @icon-phone @icon-pintrest-black @icon-student @icon-tw-black @icon-tw-white @icon-vimeo-white;
+@spritesheet: 168px 165px '../assets/icons/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(%a)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

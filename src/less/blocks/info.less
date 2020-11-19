@@ -1,0 +1,65 @@
+.info{
+    background-color:@color_orange;
+    padding: 70px 0;
+    &-block{
+        .row-flex();
+        &-item{
+            .col();
+            .size(3);
+            .size-ssm(6);
+            .size-xxs(12);
+            .ssm(margin-bottom,25px);
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: @color_white;
+            &__icon{
+                &_file{
+                    .sprite(@icon-file);
+                }
+                &_student{
+                    .sprite(@icon-student);
+                }
+                &_fb-big{
+                    .sprite(@icon-fb-big);
+                }
+                &_peoples{
+                    .sprite(@icon-peoples);
+                }
+               
+            }
+            &__value{
+                font-family: '@{PTSans}-Bold';
+                font-size: 26px;
+                letter-spacing: 1px;
+                line-height: 30px;
+                padding: 20px 0;
+                .ssm( padding, 10px 0 0);
+            }
+            &__subtitle{
+                font-family: @fontSemibold;
+                letter-spacing: 1px;
+                line-height: 30px;
+            }
+        }
+    }
+    &.animated{
+        .info-block{
+            &-item{
+                .animated({
+                    .zoomIn();
+                });
+                &:nth-child(2){
+                    .delay(.1s);
+                }
+                &:nth-child(3){
+                   .delay(.2s);
+                }
+                &:nth-child(4){
+                    .delay(.2s);
+                }
+            }
+        }
+    }
+}

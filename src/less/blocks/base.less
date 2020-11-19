@@ -1,0 +1,74 @@
+@import '../fonts/fonts.less';
+.reset();
+
+.wrapper{
+    .wrapper();
+}
+
+.scrollbar(@color_scrollbar-track, @color_scrollbar-thumb);
+
+
+@font-face {
+  .font(@font; @fontRegular);
+}
+
+@font-face {
+  .font(@font; @fontItalic);
+}
+
+@font-face {
+  .font(@font; @fontSemibold);
+}
+
+@font-face {
+  .font(@PTSans; '@{PTSans}-Bold');
+}
+
+@font-face {
+  .font(@PTSans; '@{PTSans}-Italic');
+}
+
+@font-face {
+  .font(@Cookie; '@{Cookie}-Regular');
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html:not([data-scroll='0']) .header {
+  background: rgba(2, 2, 2, 0.4);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  top: 0;
+  transition: all ease-out .5s;
+ 
+  .header-block__logo-text{
+    color: @color_white;
+  }
+  .social__icon{
+    filter: invert(100%) contrast(200%);
+  }
+}
+
+
+body {
+  font-family: @fontRegular;
+}
+a, button{
+  cursor: pointer;
+  &:focus{
+      outline: none;
+  }
+}
+input{
+  cursor: text;
+  &:focus{
+      outline: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}

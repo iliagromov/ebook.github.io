@@ -1,0 +1,85 @@
+.banner{
+    background-color: @color_lightgray;
+    &-block{
+        .row-flex();
+        min-height:  646px;
+        //fixme
+        align-items: center;
+        &__text{
+            .col();
+            .size(7);
+            .size-sm(12);
+            .sm-block({
+                text-align: center;
+            });
+            padding-top: 90px;
+            .page__text{
+                padding: 25px 0 35px;
+            }
+           .page__title-h1,
+           .page__text,
+           .banner-block__actions{
+               .animated({
+                   .fadeInLeft();
+               });
+           }
+           .page__text{
+               
+                    .delay(.1s);
+              
+           }
+           .banner-block__actions{
+               
+                    .delay(.2s);
+             
+           }
+            
+        }
+        &__img{
+            .col();
+            .size(5);
+            .sm(display, none);
+            padding-top: 15%;
+            //fixme исправить ширину см.макет
+            .page__img{
+                .animated({
+                    .fadeInRight();
+                    .delay(.1s);
+                });
+            }
+        }
+       
+        &__actions{
+            .row-flex();
+            .sm-block({
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            });
+            .page__btn{
+                .col();
+                 //fixme посмотреть как не допускать вложенность
+                .size(5.1);
+                .size-sm(6);
+                .size-xs(12);
+                .sm(margin, 10px 0);
+                &.page__btn_white{
+                    
+                    &::after{
+                        content: "";
+                        .sprite(@icon-basket-orange);
+                        margin-left: 10px;
+                       
+                    }
+                    &:hover{
+                        &::after{
+                            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(152deg) brightness(117%) contrast(400%);
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+mixin item(icon,value,subtitle)
+    .info-block-item
+        div(class=icon)
+        .info-block-item__value=value
+        .info-block-item__subtitle=subtitle
+
+section.info
+    .wrapper
+        .info-block
+            +item('info-block-item__icon_file',100,'Total Pages')
+            +item('info-block-item__icon_student',1000,'Active Readers')
+            +item('info-block-item__icon_fb-big',1400,'Facebook Fans')
+            +item('info-block-item__icon_peoples',1600,'Subscribers')

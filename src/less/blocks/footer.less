@@ -1,0 +1,28 @@
+.footer{
+    padding: 50px 0;
+    background-color: @color_orange;
+    position: sticky;
+    bottom: 0;
+    &-block{
+        display: flex;
+        color: @color_white;
+        align-items: center;
+        justify-content: space-between;
+        .xs-block({
+            flex-wrap:wrap;
+            justify-content: center;
+        });
+        .copyright{
+            font-size: 14px;
+            line-height: 24px;
+           .xs(order, 1);
+        }
+        
+        .social{
+            .xs-block({
+                order: 0;
+                margin-bottom: 20px;
+               });
+        }
+    }
+}

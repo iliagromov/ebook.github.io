@@ -1,0 +1,18 @@
+extends templates/template
+
+block title
+	title eBook
+block append style
+block content
+	main.page
+		include modules/header-module
+		include blocks/banner
+		include blocks/about
+		include blocks/overview
+		include blocks/buy
+		include blocks/info
+		include blocks/testimonial
+		include blocks/contact
+	include blocks/footer
+block append script
+	script(src='js/store-scroll.js')

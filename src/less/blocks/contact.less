@@ -1,0 +1,127 @@
+.contact{
+    text-align: center;
+    padding: 50px 0;
+    &-block{
+        .row-flex();
+        
+        &-info{
+            .col();
+            .size(4);
+            .size-sm(12);
+            .shift-right(1);
+            .shift-sm-right(0);
+            display: flex;
+            justify-content: center;
+            min-width: 299px;
+            //fixme min-width
+            &_circle{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 299px;
+                height: 299px;
+                //fixme height width
+                border-radius: 100%;
+                background-color: #ffffff;
+                border: 3px solid #f57f20;
+                justify-content: center;
+            }
+            
+           
+            
+            &__icon{
+                .sprite(@icon-mark-map);
+                margin: 0 auto;
+            }
+            .page__title-h3_big{
+                padding: 25px 0 20px;
+            }
+           
+            .page__title-h3_big,
+            .page__link{
+                color: @color_orange;
+            }
+            .page__text_line-up-down{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+                color: @color_gray-4 ;
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                   
+                    background-color: @color_gray-8;
+                    width: 180px;
+                    height: .5px;
+                    //fixme почему у after линия больше
+                }
+                &::before{
+                    top: 0;
+                }
+                &::after{
+                    bottom: 0;
+                }
+            }
+            .page__link{
+                &::before{
+                    content: "";
+                    .sprite(@icon-phone);
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &-form{
+            .col();
+            .size(5);
+            .size-sm(12);
+            .sm(padding-top, 25px);
+            
+            .page__form{
+                // .row-flex();
+                .page__input,
+                .page__textarea{
+                    // .size(12);
+                    width: 100%;
+                    //fixme
+                }
+                .page__btn{
+
+                    .size(7);
+                    .sm(width, 100%);
+                     //fixme
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &.animated{
+        .page__title-h2,
+        .page__text_italic{
+            .animated({
+                .fadeInDown();
+            });
+        }
+        .contact-block-info{
+            .animated({
+                .fadeInLeft();
+                .delay(.1s);
+            });
+        }
+        .contact-block-form{
+            .animated({
+                .fadeInRight();
+                .delay(.1s);
+            });
+        }
+    }
+    
+    .page__text_italic{
+        padding: 20px 0 40px;
+    }
+}

@@ -1,0 +1,18 @@
+mixin item(img, title)
+    .overview-items__item
+        img.page__img(src=img, alt="img")
+        h3.page__title-h3=title 
+        .page__text Li lingues differe solmen in  grammatical  pronunciation  plu commun vocabules.
+
+section#overview.overview
+    .wrapper
+        h2.page__title-h2 A Complete Overview
+        .page__text_italic At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.
+        .overview-items
+            +item('assets/img/img-job.png','How to Start new Business')
+            +item('assets/img/img-chapter-2.png','Planing & Managments')
+            +item('assets/img/img-chapter-3.png','Resources and techniques')
+            +item('assets/img/img-chapter-4.png','A common daily life example')
+            +item('assets/img/img-chapter-5.png','Best way to communicate')
+            +item('assets/img/img-chapter-6.png','How to Start new Corporate')
+            +item('assets/img/img-chapter-7.png','Final Tips?')

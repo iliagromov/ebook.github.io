@@ -1,0 +1,129 @@
+.page{
+    position: relative;
+    background: @color_white;
+    z-index: 1;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    &__title{
+        &-h1,
+        &-h2,
+        &-h2_big,
+        &-h3,
+        &-h3_big{
+           font-family: '@{PTSans}-Bold';
+        }
+        &-h1,
+        &-h2_big{
+            font-size: 30px;
+            color: @color_black;
+        }
+        &-h2{
+            font-size: 26px;
+            color: @color_orange;
+        }
+        &-h3{
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: @color_gray-26;
+            &_big{
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 30px;
+            }
+        }
+    }
+    &__subtitle{
+        font-family: '@{PTSans}-Italic';
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 30px;
+        color: @color_gray-4;
+    }
+    &__text{
+        font-family: @fontRegular;
+        color: @color_gray;
+        font-size: 16px;
+        line-height: 30px;
+        &_italic{
+            font-family: @fontItalic;
+            color: @color_gray-8;
+        }
+        &_author{
+            font-family:'@{Cookie}-Regular';
+            color: @color_gray-4;
+            font-size: 30px;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+        &_bold{
+            font-family: '@{PTSans}-Bold';
+        }
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+
+        font-family: '@{PTSans}-Bold';
+        font-size: 24px;
+        letter-spacing: 0px;
+        line-height: 30px;
+        color: @color_white;
+        background-color: @color_orange;
+        border-radius: 5px;
+        border:2px solid @color_orange;
+        //fixme записать в одну строчку
+        transition: all 0.5s ease-out;
+
+        &:hover{
+            color: @color_orange;
+            background-color: @color_white;
+        }
+        &_white{
+            color: @color_orange;
+            background-color: @color_white;
+            &:hover{
+                color: @color_white;
+                background-color: @color_orange;
+            }
+        }
+    }
+    &__link{
+        font-family: @fontSemibold;
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 30px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__img{
+
+    }
+    &__form{
+        padding: 10px 0;
+       
+    }
+    &__input,
+    &__textarea{
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 2px;
+        background-color: #f5f5f5;
+        border: 1px solid #dddcdc;
+        box-sizing: border-box;
+    }
+    &__input{
+        height: 52px;
+       
+    }
+    &__textarea{
+        resize: none;
+       
+        
+    }
+    &_hidden{
+        display: none;
+    }
+}

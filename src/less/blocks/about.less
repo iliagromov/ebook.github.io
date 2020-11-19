@@ -1,0 +1,73 @@
+.about{
+    opacity: 0;
+    &-block{
+        .row-flex();
+        align-items: center;
+        padding-top: 50px;
+        &__img{
+            .col();
+            .size(5);
+            .sm(display, none);
+
+            
+        }
+        &__text{
+            .size(7);
+            .size-sm(12);
+
+            .page__title-h2,
+            .page__subtitle,
+            .page__text_author{
+                text-align: center;
+            }
+            .page__text{
+                .sm(text-align, center);
+                &_italic{
+                    padding: 15px 0 20px;
+                    .sm(text-align, center);
+                    //fixme проверить по макету
+                }
+                &_author{
+                    padding: 30px 0 20px;
+                }
+            }
+            
+        }
+    }
+    &.animated{
+        opacity: 1;
+        .about-block{
+            &__img{
+                .animated({
+                    .fadeInLeft();
+                    .delay(.2s);
+                });
+            }
+            &__text{
+                .page__title-h2,
+                .page__subtitle,
+                .page__text_italic,
+                .page__text,
+                .page__text_author,
+                .social{
+                    .animated({
+                        .fadeInRight();
+                    });
+                }
+                .page__text_italic{
+                    .delay(.1s);
+                }
+                .page__text{
+                    .delay(.2s);
+                }
+                .page__text_author{
+                    .delay(.3s);
+                }
+                .social{
+                    .delay(.4s);
+                }
+            }
+        }
+        
+    }
+}
